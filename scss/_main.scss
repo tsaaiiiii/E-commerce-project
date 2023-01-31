@@ -27,44 +27,81 @@
 
 
 
-.list-group{
-    text-align: center;
-    border-radius: 0px;
-    width: 70%;
-    margin-top: 10px;
-    @include iphone{
-        margin: 30px auto;
-        
-    }
-    .list-group-item.list-group-item-action.title{
-        font-size: 20px;
-        background-color: #3F5D45;
-        border:#3F5D45;
-        color:white;
-        
-    }
+
+.col-lg-12.col-md-12.col-sm-12{
+    z-index: -100;
+   
 }
 
-.list-group-item.list-group-item-action{
-    font-size: 18px;
-    &:hover{
-        color:#3F5D45;
-        background-color: #EAF0ED;
-        font-weight: bold;
+.row_green_bg{
+    margin-top: -30px;
     
-    }
+}
 
+.green_bg{
+    border: solid 1px black;
+    background-color: red;
+    width: 260px;
+    height: 256px;
+    position: relative;
+    z-index: 500;
+    img{
+        position: absolute;
+        z-index: -500;
+    }
+    
+    h3{
+        width: 20px;
+        margin: 0 auto;
+        margin-top: -150px;
+        font-size: 20px;
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+
+
+
+#dessert_intro_page1{
+    .container-fluid.page1{
+        margin-top: 100px;
+        .row_intro{
+            height: 420px;
+            margin-top: 200px;
+            position: relative;
+            background-color:#EAF0ED;
+            z-index: -100;
+           
+            
+                p{
+                    @include p_font;
+                    writing-mode: vertical-rl;
+    
+                }
+                
+               img{
+                margin-top: -30px;
+               }
+
+            
+            
+        }
+     
+    }
+    
+   
 }
 
 
 
 
-
-
-
-
-
-
+.row.justify-content-center{
+   margin: 50px 0;
+    .col-lg-3 .col-md-3 .col-sm-12{
+        position: relative;
+    }
+}
 .daily_select{
     @include daily_select;
     
@@ -93,47 +130,7 @@ button.btn-lg{
     height: 50px;
     color: $topic;
     font-weight: bold;
-    margin-bottom: 50px;
-   padding-left: 35%;
-    padding-top: 10px;
-    @include iphone{
-        padding-left: 40%;
-    }
 }
-
-
-.pagination.pagination-lg{
-    display: flex;
-   padding: 10px;
-  @include iphone{
-    margin-left: 80px;
-  }
- 
-
-}
-.page-item.page{
-    
-    a{
-        color:#3F5D45;
-       
-        &:hover{
-            background-color: #3F5D45;
-            color:white;
-        }
-
-    }
-   
-    
-}
-
-
-
-
-
-
-
-
-
 
 .navbar-brand{
     display:flex;
@@ -153,6 +150,7 @@ button.btn-lg{
 button{
     width: 100%;
     display: flex;
+   
     .arrow{
         background-color: #FFE180;
         border:solid 1px #FFE180;
@@ -160,7 +158,6 @@ button{
         
         margin-left: 60%
     }
-    
 }
 .d-flex{
     @include iphone{
@@ -183,7 +180,6 @@ button{
             @include iphone{
                 margin-top: 10px;
             }
-            
         }
         p{
             margin-top: 80px;
@@ -197,11 +193,10 @@ button{
     
     }
     .col-lg-4.col-sm-4{
-      margin-bottom: 30px;
-            @include iphone{
-                margin-top: 10px;
-            }
-        
+        margin-bottom: 30px;
+        @include iphone{
+            margin-top: 10px;
+        }
         img{
            padding: 20px;
            @include iphone{
@@ -211,3 +206,4 @@ button{
     }
    
 }
+

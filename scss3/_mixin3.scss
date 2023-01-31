@@ -16,9 +16,6 @@
 }
 
 
-
-
-
 @mixin mac{
     @media all and (max-width:1600px){
         @content;

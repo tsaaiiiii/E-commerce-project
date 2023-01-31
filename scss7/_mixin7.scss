@@ -1,0 +1,63 @@
+@mixin daily_select{
+    position: absolute;
+    background-color: $topic;
+    color:#EAF0ED;
+    width: 30px;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+@mixin name_product{
+    border: 1px solid #EAF0ED; 
+    width: 50%;
+    text-align: center;
+    color: $topic;
+}
+@mixin order_total{
+    border-left: solid 1px $dessert_intro;
+    border-bottom: solid 1px $dessert_intro;
+    border-right: solid 1px $dessert_intro;
+}
+@mixin order_total-h1{
+     
+        font-size: 24px;
+        text-align: center;   
+        background-color: $dessert_intro;
+        color: #8DA291;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 20px;
+
+}
+@mixin order_total-p{
+    color: #8DA291;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+@mixin order_total-p2{
+    font-size: 18px;
+        margin-top: 20px;
+        font-weight: bold;
+}
+
+
+
+@mixin mac{
+    @media all and (max-width:1600px){
+        @content;
+    }
+}
+@mixin ipad{
+    @media all and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin iphone{
+    @media all and (max-width:767px){
+        @content;
+    }
+}

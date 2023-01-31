@@ -1,0 +1,281 @@
+.navbar-brand.logo{
+    @include iphone{
+        margin-left: 100px;
+    }
+}
+.navbar-brand.cart{
+    
+    @include mac{
+        display: none;
+    }
+    @include ipad{
+        display: none;
+    }
+    @include iphone{
+        display: block;
+        
+    }
+}
+.nav-item{
+    img{
+        @include iphone{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+    .row.g-0{
+        .col-lg-6.offset-lg-1.col-sm-12{
+            
+            .title{
+                width:  100%;
+                padding: 10px;
+                color: $topic;
+                font-weight: bold;
+                text-align: center;
+                font-size: 24px;
+                background-color: #EAF0ED;
+            }
+            .order{
+                
+                display: flex;
+                color:$topic;
+                @include iphone{
+                    position: relative;
+                }
+                .order_list{
+                    display: flex;
+                    @include iphone{
+                        
+                        display: block;
+                        
+                        font-size: 20px;
+                    }
+                }
+                
+                img{
+                    padding-top: 30px;
+                    
+                    @include iphone{
+                        margin-left: 10px;
+                       
+                        width: 180px;
+                        height: 150px;
+                    }
+
+                }
+                
+                .name{
+                    
+                    padding: 40px 20px;
+                    line-height: 25px;
+                }
+                .price{
+                    font-weight: bold;
+                     padding: 40px 20px;
+                     @include iphone{
+                        position: absolute;
+                        top:70px;
+                        right:0px;
+                        
+                     }
+                    
+                }
+            }
+            nav{
+                
+                padding: 50px 20px;
+                @include iphone{
+                    position: absolute;
+                    top:50px;
+
+                 }
+                
+                .page-link{
+                    color: $topic;
+                    
+                }
+            }
+            
+        
+                img.trash{
+                    padding: 0px;
+                    @include iphone{
+                        display: none;
+                    }
+
+                }
+
+        }
+        .col-lg-4.col-sm-12{
+           margin-left: 10px;
+           @include iphone{
+            margin: 0px;
+           }
+            .order_total{
+                background-color: $topic;
+                padding: 10px;
+                @include iphone{
+                    background-color: #fff;
+                }
+            }
+            h1{
+                color:$dessert_intro;
+                font-size: 24px;
+                text-align: center;
+                @include iphone{
+                  background-color: $dessert_intro;
+                  color: $topic;
+                  padding: 10px;
+                  font-weight: bold;
+                  margin-top: 20px;
+                  
+                }
+            }
+            p{
+                color:$dessert_intro;
+                margin-bottom: 10px;
+                font-size: 14px;
+                @include iphone{
+                    color: $topic;
+                }
+            }
+            span{
+                margin-left: 150px;
+                color:$dessert_intro;
+                @include iphone{
+                    color: $topic;
+                    margin-left: 380px;
+                }
+            }
+            
+            
+            
+             
+            .total p{
+                font-size: 18px;
+                margin-top: 20px;
+                font-weight: bold;
+                @include iphone{
+                    color: $topic;
+                    margin-top: 30px;
+                }
+                span{
+                    margin-left: 140px;
+                    @include iphone{
+                        color: $topic;
+                        margin-left: 350px;
+                    }
+                }
+            }
+            
+            .check{
+                
+                background-color: #FFE180;
+                cursor: pointer;
+                padding: 15px;
+                a{
+                    color: $topic;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+.navbar-brand{
+    display:flex;
+    margin-left: 150px;
+    img{
+        @include iphone{
+            margin-left: -80px;
+            margin-bottom: 10px;
+        }
+    }
+    p{
+        margin-top: 15px;
+        margin-left: 10px;
+        color: white;
+    }
+}
+button{
+    width: 100%;
+    display: flex;
+    .arrow{
+        background-color: #FFE180;
+        border:solid 1px #FFE180;
+        padding: 0px 18px;
+        
+        margin-left: 60%
+    }
+    
+}
+.d-flex{
+    @include iphone{
+        margin: 0 auto;
+    }
+    a{
+       
+        img{
+            margin-left: 200px;
+            background-color: #FFE180;
+        }
+    }
+}
+
+.row.row_footer{
+   background-color: #EAF0ED;
+    .col-lg-6.col-sm-6{
+        img{
+            margin-top: 20px;
+            @include iphone{
+                margin-top: 10px;
+            }
+            
+        }
+        p{
+            margin-top: 80px;
+            line-height: 30px;
+            color: $topic;
+            @include iphone{
+                margin-top: 50px;
+            }
+        }
+        
+    
+    }
+    .col-lg-4.col-sm-4{
+       margin-bottom: 30px;
+            @include iphone{
+                margin-top: 10px;
+            }
+        
+        img{
+           padding: 20px;
+           @include iphone{
+            display: none;
+           }
+        }
+    }
+   
+}
