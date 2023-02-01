@@ -1,257 +1,245 @@
-.navbar-brand.logo{
-    @include iphone{
-        margin-left: 100px;
+nav.navbar.navbar-expand-sm.navbar-light {
+  flex-wrap: nowrap;
+  .container-fluid {
+    @include mac {
+      flex-direction: row;
     }
+    @include iphone {
+      flex-direction: row-reverse;
+    }
+  }
 }
-.navbar-brand.cart{
-    
-    @include mac{
-        display: none;
-    }
-    @include ipad{
-        display: none;
-    }
-    @include iphone{
-        display: block;
-        
-    }
+.navbar-brand.logo {
+  margin-top: 10px;
+  @include iphone {
+    margin-left: 100px;
+  }
 }
-.nav-item{
-    img{
-        @include iphone{
-            display: none;
-        }
-    }
+.navbar-brand.cart {
+  margin-top: 10px;
+  @include mac {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+  @include iphone {
+    display: block;
+  }
 }
-
-
-
-
-
-.sign{
-    // border:solid 1px red;
-    background-color: $topic;
-  
-    h1{
-        font-size: 28px;
-        text-align: center;
-        padding: 30px 0px;
-        color: $dessert_intro;
+.nav-item {
+  img {
+    @include iphone {
+      display: none;
     }
-    .input-group.mb-3{
-        width: 70%;
-        display: flex;
-        background-color: $dessert_intro;
-        margin: 0 auto;
-      
-        h4{
-            font-size: 16px;
-            color:#8DA291;
-            padding-left: 50px;
-        }
-        
-    }
-    .form-check{
-        padding-left: 20%;
-        padding-bottom: 5px;
-        label{
-            margin-top: 5px;
-        }
-    }
-}
-.signin{
-    margin-top: -2px;
-    h2{
-        // border:solid 3px purple;
-       font-size: 24px;
-       background-color: #FFE180;
-       text-align: center;
-       color:#3F5D45;
-       padding: 20px;
-       margin-bottom: 50px;
-    }
+  }
 }
 
-.col-lg-4.connect{
-    margin-top: 10px;
-    // border:solid 1px red;
-    background-color: $dessert_intro;
-    margin-left: -12px;
-    height: 240px;
+.sign {
+  // border:solid 1px red;
+  background-color: $topic;
 
-    h3{
-        margin-top: 40px;
-        font-size: 18px;
-        text-align: center;
-        color:#8DA291;
-    }
-    .social_media{
-        // border:solid 1px blue;
-        margin: 20px;
-        margin-left: 50px;
-        background-color: #fff;
-        width: 80%;
-        height: 35px;
-        padding: 10px;
-        img{
-           padding-left: 30%;
-        }
-    }
-}
-.contaniner.lg{
-    @include iphone{
-        display:none;
-    }
-}
-.container-fluid.sm{
-   
-    .row{
-        @include mac{
-            display:none;
-        }
-        @include ipad{
-            display:none;
-        }
-        @include iphone{
-            display: flex;
-            // border:solid 3px red;
-        }
-        .col-sm-12{
-            
-            background-color: $topic;
-            padding: 20px;
-            h1{
-                
-                font-size: 28px;
-                color:#EAF0ED;
-                text-align: center;
-            }
-        }
-    }
-    .row.justify-content-center{
-        .col-sm-12.media{
-            display:flex;
-            background-color: $dessert_intro;
-            justify-content: center;
-
-            .social_media{
-                background-color: #FFFFFF;
-                border:solid 1px white;
-                padding: 10px;
-                padding-top: 20px;
-                margin-left: 5px;
-            }
-        }
-    }
-   
-
-   
-}
-.row.g-0{
-    @include mac{
-        display: none;
-    }
-    @include ipad{
-        display: none;
-    }
-    @include iphone{
-        display: block;
-    }
-    font-size: 24px;
-       background-color: #FFE180;
-       text-align: center;
-       color:#3F5D45;
-       padding: 20px;
-       
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navbar-brand{
-    display:flex;
-    margin-left: 150px;
-    img{
-        @include iphone{
-            margin-left: -80px;
-            margin-bottom: 10px;
-        }
-    }
-    p{
-        margin-top: 15px;
-        margin-left: 10px;
-        color: white;
-    }
-}
-button{
-    width: 100%;
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0px;
+    color: $dessert_intro;
+  }
+  .input-group.mb-3 {
+    width: 70%;
     display: flex;
-    .arrow{
-        background-color: #FFE180;
-        border:solid 1px #FFE180;
-        padding: 0px 18px;
-        margin-left: 60%
+    background-color: $dessert_intro;
+    margin: 0 auto;
+
+    h4 {
+      font-size: 16px;
+      color: #8da291;
+      padding-left: 50px;
     }
-    
+  }
+  .form-check {
+    padding-left: 20%;
+    padding-bottom: 5px;
+    label {
+      margin-top: 5px;
+    }
+  }
 }
-.d-flex{
-    @include iphone{
-        margin: 0 auto;
-    }
-    a{
-       
-        img{
-            margin-left: 200px;
-            background-color: #FFE180;
-        }
-    }
+.signin {
+  margin-top: -2px;
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    // border:solid 3px purple;
+    font-size: 24px;
+    background-color: #ffe180;
+    text-align: center;
+    color: #3f5d45;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
 }
 
-.row.row_footer{
-   background-color: #EAF0ED;
-    .col-lg-6.col-sm-6{
-        img{
-            margin-top: 20px;
-            @include iphone{
-                margin-top: 10px;
-            }
-            
-        }
-        p{
-            margin-top: 80px;
-            line-height: 30px;
-            color: $topic;
-            @include iphone{
-                margin-top: 50px;
-            }
-        }
-        
-    
+.col-lg-4.connect {
+  margin-top: 10px;
+  // border:solid 1px red;
+  background-color: $dessert_intro;
+  margin-left: -12px;
+  height: 240px;
+
+  h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: #8da291;
+  }
+  .social_media {
+    // border:solid 1px blue;
+    margin: 20px;
+    margin-left: 50px;
+    background-color: #fff;
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    img {
+      padding-left: 30%;
     }
-    .col-lg-4.col-sm-4{
-       margin-bottom: 30px;
-            @include iphone{
-                margin-top: 10px;
-            }
-        
-        img{
-           padding: 20px;
-           @include iphone{
-            display: none;
-           }
-        }
+  }
+}
+.contaniner.lg {
+  @include iphone {
+    display: none;
+  }
+}
+.container-fluid.sm {
+  .row {
+    @include mac {
+      display: none;
     }
-   
+    @include ipad {
+      display: none;
+    }
+    @include iphone {
+      display: flex;
+      // border:solid 3px red;
+    }
+    .col-sm-12 {
+      background-color: $topic;
+      padding: 20px;
+      h1 {
+        font-size: 28px;
+        color: #eaf0ed;
+        text-align: center;
+      }
+    }
+  }
+  .row.justify-content-center {
+    .col-sm-12.media {
+      display: flex;
+      background-color: $dessert_intro;
+      justify-content: center;
+
+      .social_media {
+        background-color: #ffffff;
+        border: solid 1px white;
+        padding: 10px;
+        padding-top: 20px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.row.g-0 {
+  @include mac {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+  @include iphone {
+    display: block;
+  }
+  font-size: 24px;
+  background-color: #ffe180;
+  text-align: center;
+  color: #3f5d45;
+  padding: 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  margin-left: 150px;
+  img {
+    @include iphone {
+      margin-left: -50px;
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    margin-top: 15px;
+    margin-left: 10px;
+    color: white;
+  }
+}
+.sent_mail {
+  width: 20%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px $dessert-intro;
+  background-color: $dessert-intro;
+  margin: 0px;
+  cursor: pointer;
+  @include iphone {
+    width: 45%;
+    margin-left: 150px;
+  }
+  .icon_mail {
+    margin-left: 5px;
+  }
+  .icon_arrow {
+    background-color: #ffe180;
+    border: solid 1px #ffe180;
+
+    width: 35px;
+    height: 28px;
+
+    img {
+      margin-left: 5px;
+    }
+  }
+}
+
+.row.row_footer {
+  background-color: #eaf0ed;
+  .col-lg-6.col-sm-6 {
+    img {
+      margin-top: 20px;
+      @include iphone {
+        margin-top: 10px;
+      }
+    }
+    p {
+      margin-top: 80px;
+      line-height: 30px;
+      color: $topic;
+      @include iphone {
+        margin-top: 50px;
+      }
+    }
+  }
+  .col-lg-4.col-sm-4 {
+    margin-bottom: 30px;
+    @include iphone {
+      margin-top: 10px;
+    }
+
+    img {
+      padding: 20px;
+      @include iphone {
+        display: none;
+      }
+    }
+  }
 }

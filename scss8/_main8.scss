@@ -9,7 +9,6 @@ nav.navbar.navbar-expand-sm.navbar-light {
     }
   }
 }
-
 .navbar-brand.logo {
   margin-top: 10px;
   @include iphone {
@@ -36,78 +35,76 @@ nav.navbar.navbar-expand-sm.navbar-light {
   }
 }
 
-.list-group {
-  text-align: center;
-  border-radius: 0px;
-  width: 70%;
-  margin-top: 10px;
-  @include iphone {
-    margin: 30px auto;
+.row.g-0 {
+  .col-lg-12.col-sm-12 {
+    position: relative;
+    padding-left: 200px;
+    @include iphone {
+      padding: 0px;
+      margin-bottom: 50px;
+    }
+    img {
+      position: relative;
+      z-index: -100;
+      @include iphone {
+        width: 100%;
+        height: 500px;
+      }
+    }
+    .payment_success {
+      position: absolute;
+      top: 250px;
+      left: 600px;
+      @include iphone {
+        top: -20px;
+        left: 150px;
+      }
+      .bar_payment {
+        img {
+          margin-bottom: 30px;
+          @include iphone {
+            width: 60%;
+          }
+        }
+      }
+
+      .bar_font {
+        position: absolute;
+        @include iphone {
+          top: 50px;
+          left: 20px;
+
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
   }
-  .list-group-item.list-group-item-action.title {
-    font-size: 20px;
-    background-color: #3f5d45;
-    border: #3f5d45;
-    color: white;
-  }
-}
+  .next_step {
+    position: absolute;
+    width: 25%;
+    top: 500px;
+    left: 580px;
 
-.list-group-item.list-group-item-action {
-  font-size: 18px;
-  &:hover {
-    color: #3f5d45;
-    background-color: #eaf0ed;
-    font-weight: bold;
-  }
-}
-
-.daily_select {
-  @include daily_select;
-}
-
-.name_price {
-  display: flex;
-  justify-content: center;
-
-  line-height: 50px;
-}
-.name_product {
-  @include name_product;
-}
-.price_product {
-  font-weight: bold;
-  @include name_product;
-}
-button.btn-lg {
-  border-radius: 0px;
-  background-color: $dessert_intro;
-  border: solid 1px $dessert_intro;
-  width: 100%;
-  height: 50px;
-  color: $topic;
-  font-weight: bold;
-  margin-bottom: 50px;
-  padding-left: 20px;
-  padding-top: 10px;
-  @include iphone {
-    padding: 0px 20px;
-  }
-}
-
-.pagination.pagination-lg {
-  display: flex;
-  padding: 10px;
-  @include iphone {
-    margin-left: 80px;
-  }
-}
-.page-item.page {
-  a {
-    color: #3f5d45;
-
-    &:hover {
-      background-color: #3f5d45;
-      color: white;
+    @include iphone {
+      width: 100%;
+      top: 590px;
+      left: 0px;
+    }
+    a {
+      text-decoration: none;
+    }
+    @include iphone {
+      margin-bottom: 0px;
+    }
+    h2 {
+      // border:solid 3px purple;
+      font-size: 24px;
+      background-color: #ffe180;
+      text-align: center;
+      color: #3f5d45;
+      padding: 20px;
     }
   }
 }

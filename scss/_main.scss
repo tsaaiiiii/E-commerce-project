@@ -1,209 +1,294 @@
-.navbar-brand.logo{
-    @include iphone{
-        margin-left: 100px;
+nav.navbar.navbar-expand-sm.navbar-light {
+  flex-wrap: nowrap;
+  .container-fluid {
+    @include mac {
+      flex-direction: row;
     }
-}
-.navbar-brand.cart{
-    
-    @include mac{
-        display: none;
+    @include iphone {
+      flex-direction: row-reverse;
     }
-    @include ipad{
-        display: none;
-    }
-    @include iphone{
-        display: block;
-        
-    }
-}
-.nav-item{
-    img{
-        @include iphone{
-            display: none;
-        }
-    }
+  }
 }
 
-
-
-
-
-.col-lg-12.col-md-12.col-sm-12{
-    z-index: -100;
-   
+.navbar-brand.logo {
+  margin-top: 10px;
+  @include iphone {
+    margin-left: 100px;
+  }
+}
+.navbar-brand.cart {
+  margin-top: 10px;
+  @include mac {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+  @include iphone {
+    display: block;
+  }
+}
+.nav-item {
+  img {
+    @include iphone {
+      display: none;
+    }
+  }
 }
 
-.row_green_bg{
-    margin-top: -30px;
-    
+.row.g-0 {
+  z-index: -100;
+  .col-lg-12.col-md-12.col-sm-12 {
+    img {
+      padding-top: 20px;
+      padding-left: 180px;
+      @include iphone {
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
 }
 
-.green_bg{
-    border: solid 1px black;
-    background-color: red;
-    width: 260px;
-    height: 256px;
+ul.row.g-0.justify-content-center.row_green_bg {
+  margin-top: -100px;
+  flex-wrap: nowrap;
+  .col-lg-2.col-sm-1 {
+    overflow: hidden;
+    width: 250px;
+    height: 300px;
     position: relative;
-    z-index: 500;
-    img{
-        position: absolute;
-        z-index: -500;
+    @include iphone {
+      width: 150px;
+      height: 200px;
     }
-    
-    h3{
-        width: 20px;
-        margin: 0 auto;
-        margin-top: -150px;
-        font-size: 20px;
+    a {
+      border: solid 1px #ffff;
+      text-decoration: none;
+      position: absolute;
+      top: 0px;
+      background-color: $topic;
+      width: 250px;
+      height: 300px;
+      opacity: 0.7;
+      color: #ffff;
+      writing-mode: vertical-lr;
+      padding: 100px 120px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      &:hover {
+        background-color: #ffe180;
+        color: $topic;
+        font-weight: bold;
+      }
+      @include iphone {
+        width: 150px;
+        height: 180px;
+        padding: 40px 60px;
+      }
     }
-    p{
-        margin-top: 20px;
+  }
+  .green_bg {
+    border: solid 1px black;
+    background-color: $topic;
+    background-image: url(https://bit.ly/2R5tqwD);
+    height: 300px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    @include iphone {
+      height: 170px;
     }
+  }
+  .green_bg2 {
+    background-image: url(https://bit.ly/2Dwoxd7);
+  }
+  .green_bg3 {
+    background-image: url(https://bit.ly/2OUteif);
+  }
 }
 
+.row.g-0.row_intro {
+  height: 380px;
+  margin-top: 200px;
+  display: flex;
+  background-color: #eaf0ed;
+  z-index: -100;
 
+  @include iphone {
+    display: none;
+  }
 
-#dessert_intro_page1{
-    .container-fluid.page1{
-        margin-top: 100px;
-        .row_intro{
-            height: 420px;
-            margin-top: 200px;
-            position: relative;
-            background-color:#EAF0ED;
-            z-index: -100;
-           
-            
-                p{
-                    @include p_font;
-                    writing-mode: vertical-rl;
-    
-                }
-                
-               img{
-                margin-top: -30px;
-               }
+  p {
+    @include p_font;
+    writing-mode: vertical-rl;
+  }
+  img {
+    margin-top: -20px;
+  }
+}
+.col-lg-2.no_reason {
+  margin: 80px auto;
+  @include iphone {
+    display: none;
+  }
+}
 
-            
-            
-        }
-     
+.iphone_use {
+  @include mac {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+  @include iphone {
+    display: block;
+  }
+  .sm_why {
+    padding: 50px 100px;
+  }
+  .sm_img {
+    img {
+      display: block;
+      z-index: -100;
     }
-    
-   
-}
-
-
-
-
-.row.justify-content-center{
-   margin: 50px 0;
-    .col-lg-3 .col-md-3 .col-sm-12{
-        position: relative;
-    }
-}
-.daily_select{
-    @include daily_select;
-    
-}
-
-.name_price{
-    display:flex;
-    justify-content: center;
-   
-    line-height: 50px;
-   
-}
-.name_product{
-    @include name_product;
-}
-.price_product{
-    font-weight: bold;
-    @include name_product;
-   
-}
-button.btn-lg{
-    border-radius: 0px;
+  }
+  .sm_p {
     background-color: $dessert_intro;
-    border: solid 1px $dessert_intro;
-    width: 100%;
-    height: 50px;
-    color: $topic;
-    font-weight: bold;
+    padding: 20px 50px;
+    p {
+      color: #8da291;
+      line-height: 40px;
+    }
+  }
+}
+.col-sm-2.no_reason {
+  @include mac {
+    display: none;
+  }
+  @include ipad {
+    display: none;
+  }
+  @include iphone {
+    display: block;
+  }
+  .no_reason {
+    padding: 50px 100px 0px;
+  }
 }
 
-.navbar-brand{
-    display:flex;
+.row.justify-content-center {
+  margin: 50px 0;
+  .col-lg-3 .col-md-3 .col-sm-12 {
+    position: relative;
+  }
+  .col-lg-3.col-md-3.col-sm-12.product1 {
+    @include iphone {
+      display: none;
+    }
+  }
+}
+.daily_select {
+  @include daily_select;
+}
+
+.name_price {
+  display: flex;
+  justify-content: center;
+
+  line-height: 50px;
+}
+.name_product {
+  @include name_product;
+}
+.price_product {
+  font-weight: bold;
+  @include name_product;
+}
+button.btn-lg {
+  border-radius: 0px;
+  background-color: $dessert_intro;
+  border: solid 1px $dessert_intro;
+  width: 100%;
+  height: 50px;
+  color: $topic;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  display: flex;
+  margin-left: 150px;
+  img {
+    @include iphone {
+      margin-left: -50px;
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    margin-top: 15px;
+    margin-left: 10px;
+    color: white;
+  }
+}
+.sent_mail {
+  width: 20%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px $dessert-intro;
+  background-color: $dessert-intro;
+  margin: 0px;
+  cursor: pointer;
+  @include iphone {
+    width: 45%;
     margin-left: 150px;
-    img{
-        @include iphone{
-            margin-left: -80px;
-            margin-bottom: 10px;
-        }
+  }
+  .icon_mail {
+    margin-left: 5px;
+  }
+  .icon_arrow {
+    background-color: #ffe180;
+    border: solid 1px #ffe180;
+
+    width: 35px;
+    height: 28px;
+
+    img {
+      margin-left: 5px;
     }
-    p{
-        margin-top: 15px;
-        margin-left: 10px;
-        color: white;
-    }
-}
-button{
-    width: 100%;
-    display: flex;
-   
-    .arrow{
-        background-color: #FFE180;
-        border:solid 1px #FFE180;
-        padding: 0px 18px;
-        
-        margin-left: 60%
-    }
-}
-.d-flex{
-    @include iphone{
-        margin: 0 auto;
-    }
-    a{
-       
-        img{
-            margin-left: 200px;
-            background-color: #FFE180;
-        }
-    }
+  }
 }
 
-.row.row_footer{
-   background-color: #EAF0ED;
-    .col-lg-6.col-sm-6{
-        img{
-            margin-top: 20px;
-            @include iphone{
-                margin-top: 10px;
-            }
-        }
-        p{
-            margin-top: 80px;
-            line-height: 30px;
-            color: $topic;
-            @include iphone{
-                margin-top: 50px;
-            }
-        }
-        
-    
+.row.row_footer {
+  background-color: #eaf0ed;
+  .col-lg-6.col-sm-6 {
+    img {
+      margin-top: 20px;
+      @include iphone {
+        margin-top: 10px;
+      }
     }
-    .col-lg-4.col-sm-4{
-        margin-bottom: 30px;
-        @include iphone{
-            margin-top: 10px;
-        }
-        img{
-           padding: 20px;
-           @include iphone{
-            display: none;
-           }
-        }
+    p {
+      margin-top: 80px;
+      line-height: 30px;
+      color: $topic;
+      @include iphone {
+        margin-top: 50px;
+      }
     }
-   
+  }
+  .col-lg-4.col-sm-4 {
+    margin-bottom: 30px;
+    @include iphone {
+      margin-top: 10px;
+    }
+    img {
+      padding: 20px;
+      @include iphone {
+        display: none;
+      }
+    }
+  }
 }
-

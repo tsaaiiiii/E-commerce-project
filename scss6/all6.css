@@ -52,12 +52,32 @@ table {
   border-spacing: 0;
 }
 
+nav.navbar.navbar-expand-sm.navbar-light {
+  flex-wrap: nowrap;
+}
+@media all and (max-width: 1600px) {
+  nav.navbar.navbar-expand-sm.navbar-light .container-fluid {
+    flex-direction: row;
+  }
+}
+@media all and (max-width: 767px) {
+  nav.navbar.navbar-expand-sm.navbar-light .container-fluid {
+    flex-direction: row-reverse;
+  }
+}
+
+.navbar-brand.logo {
+  margin-top: 10px;
+}
 @media all and (max-width: 767px) {
   .navbar-brand.logo {
     margin-left: 100px;
   }
 }
 
+.navbar-brand.cart {
+  margin-top: 10px;
+}
 @media all and (max-width: 1600px) {
   .navbar-brand.cart {
     display: none;
@@ -174,6 +194,20 @@ table {
   margin: 20px;
   margin-top: 30px;
 }
+.title .circle .circle_frame.circle1 {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+.title .circle .circle_frame.circle1 a {
+  text-decoration: none;
+}
+.title .circle .circle_frame.circle1 h5 {
+  text-align: center;
+  color: #3F5D45;
+  margin-top: 1px;
+}
 .title .circle .circle_frame {
   border: solid 1px #FFFFFF;
   border-radius: 100%;
@@ -198,6 +232,9 @@ table {
 
 .next_step {
   margin-bottom: 50px;
+}
+.next_step a {
+  text-decoration: none;
 }
 @media all and (max-width: 767px) {
   .next_step {
@@ -292,7 +329,7 @@ table {
 }
 @media all and (max-width: 767px) {
   .navbar-brand img {
-    margin-left: -80px;
+    margin-left: -50px;
     margin-bottom: 10px;
   }
 }
@@ -302,25 +339,33 @@ table {
   color: white;
 }
 
-button {
-  width: 100%;
+.sent_mail {
+  width: 20%;
+  height: 30px;
   display: flex;
+  justify-content: space-between;
+  border: solid 1px #EAF0ED;
+  background-color: #EAF0ED;
+  margin: 0px;
+  cursor: pointer;
 }
-button .arrow {
-  background-color: #FFE180;
-  border: solid 1px #FFE180;
-  padding: 0px 18px;
-  margin-left: 60%;
-}
-
 @media all and (max-width: 767px) {
-  .d-flex {
-    margin: 0 auto;
+  .sent_mail {
+    width: 45%;
+    margin-left: 150px;
   }
 }
-.d-flex a img {
-  margin-left: 200px;
+.sent_mail .icon_mail {
+  margin-left: 5px;
+}
+.sent_mail .icon_arrow {
   background-color: #FFE180;
+  border: solid 1px #FFE180;
+  width: 35px;
+  height: 28px;
+}
+.sent_mail .icon_arrow img {
+  margin-left: 5px;
 }
 
 .row.row_footer {

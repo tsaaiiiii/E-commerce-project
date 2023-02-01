@@ -1,10 +1,22 @@
-.navbar-brand.logo{
+nav.navbar.navbar-expand-sm.navbar-light{
+    flex-wrap: nowrap;
+    .container-fluid{
+        @include mac{
+            flex-direction: row;
+        }
+        @include iphone{
+            flex-direction: row-reverse;
+        }
+    }
+   
+}.navbar-brand.logo{
+    margin-top: 10px;
     @include iphone{
         margin-left: 100px;
     }
 }
 .navbar-brand.cart{
-    
+    margin-top: 10px;
     @include mac{
         display: none;
     }
@@ -129,6 +141,8 @@
             height: 20px;
             
         }
+        
+        
         .circle_in{
             border:solid 6px #FFFF;
             border-radius: 100%;
@@ -139,6 +153,7 @@
             cursor: pointer;
             
         }
+       
     }
     .line{
         border: solid 1px #FFFFFF;
@@ -256,7 +271,7 @@
     margin-left: 150px;
     img{
         @include iphone{
-            margin-left: -80px;
+            margin-left: -50px;
             margin-bottom: 10px;
         }
     }
@@ -266,28 +281,35 @@
         color: white;
     }
 }
-button{
-    width: 100%;
+.sent_mail{
+    width: 20%;
+    height: 30px;
     display: flex;
-    .arrow{
+    justify-content: space-between;
+    border:solid 1px $dessert-intro;
+    background-color: $dessert-intro;
+    margin: 0px;
+    cursor: pointer;
+    @include iphone{
+        width: 45%;
+        margin-left: 150px;
+    }
+    .icon_mail{
+        margin-left: 5px;
+        
+    }
+    .icon_arrow{
         background-color: #FFE180;
         border:solid 1px #FFE180;
-        padding: 0px 18px;
-        margin-left: 60%
-    }
-    
-}
-.d-flex{
-    @include iphone{
-        margin: 0 auto;
-    }
-    a{
-       
+        
+        width: 35px;
+        height: 28px;
+        
         img{
-            margin-left: 200px;
-            background-color: #FFE180;
+            margin-left: 5px;
         }
     }
+    
 }
 
 .row.row_footer{

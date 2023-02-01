@@ -52,12 +52,32 @@ table {
   border-spacing: 0;
 }
 
+nav.navbar.navbar-expand-sm.navbar-light {
+  flex-wrap: nowrap;
+}
+@media all and (max-width: 1600px) {
+  nav.navbar.navbar-expand-sm.navbar-light .container-fluid {
+    flex-direction: row;
+  }
+}
+@media all and (max-width: 767px) {
+  nav.navbar.navbar-expand-sm.navbar-light .container-fluid {
+    flex-direction: row-reverse;
+  }
+}
+
+.navbar-brand.logo {
+  margin-top: 10px;
+}
 @media all and (max-width: 767px) {
   .navbar-brand.logo {
     margin-left: 100px;
   }
 }
 
+.navbar-brand.cart {
+  margin-top: 10px;
+}
 @media all and (max-width: 1600px) {
   .navbar-brand.cart {
     display: none;
@@ -99,10 +119,8 @@ table {
 }
 .invoice button {
   width: 200px;
-  height: 50px;
+  height: 60px;
   padding: 20px;
-  padding-left: 60px;
-  padding-bottom: 30px;
   color: #EAF0ED;
   background-color: #3F5D45;
   border: solid 1px #FFFFFF;
@@ -115,7 +133,7 @@ table {
 
 .information {
   margin-bottom: 50px;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 .information label {
   color: #EAF0ED;
@@ -137,7 +155,7 @@ table {
 
 .member_address {
   display: none;
-  margin: 0px 0px 20px 60px;
+  margin: 0px 0px 20px 100px;
 }
 .member_address label {
   color: #EAF0ED;
@@ -167,6 +185,20 @@ table {
   border-radius: 100%;
   width: 20px;
   height: 20px;
+}
+.title .circle .circle_frame.circle2 {
+  background-color: #fff;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+.title .circle .circle_frame.circle2 a {
+  text-decoration: none;
+}
+.title .circle .circle_frame.circle2 h5 {
+  color: #3F5D45;
+  text-align: center;
+  margin-top: 1px;
 }
 .title .circle .circle_in {
   border: solid 6px white;
@@ -283,7 +315,7 @@ table {
 }
 @media all and (max-width: 767px) {
   .navbar-brand img {
-    margin-left: -80px;
+    margin-left: -50px;
     margin-bottom: 10px;
   }
 }
@@ -293,25 +325,33 @@ table {
   color: white;
 }
 
-button {
-  width: 100%;
+.sent_mail {
+  width: 20%;
+  height: 30px;
   display: flex;
+  justify-content: space-between;
+  border: solid 1px #EAF0ED;
+  background-color: #EAF0ED;
+  margin: 0px;
+  cursor: pointer;
 }
-button .arrow {
-  background-color: #FFE180;
-  border: solid 1px #FFE180;
-  padding: 0px 18px;
-  margin-left: 60%;
-}
-
 @media all and (max-width: 767px) {
-  .d-flex {
-    margin: 0 auto;
+  .sent_mail {
+    width: 45%;
+    margin-left: 150px;
   }
 }
-.d-flex a img {
-  margin-left: 200px;
+.sent_mail .icon_mail {
+  margin-left: 5px;
+}
+.sent_mail .icon_arrow {
   background-color: #FFE180;
+  border: solid 1px #FFE180;
+  width: 35px;
+  height: 28px;
+}
+.sent_mail .icon_arrow img {
+  margin-left: 5px;
 }
 
 .row.row_footer {
