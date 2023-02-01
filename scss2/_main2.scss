@@ -78,6 +78,9 @@ nav.navbar.navbar-expand-sm.navbar-light {
   font-weight: bold;
   @include name_product;
 }
+a {
+  text-decoration: none;
+}
 button.btn-lg {
   border-radius: 0px;
   background-color: $dessert_intro;

@@ -232,6 +232,12 @@ nav.navbar.navbar-expand-sm.navbar-light {
     display: block;
   }
 }
+.row.g-0 a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #3F5D45;
+  text-align: center;
+}
 
 .navbar-brand {
   display: flex;

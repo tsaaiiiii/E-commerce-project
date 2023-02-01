@@ -158,6 +158,10 @@ nav.navbar.navbar-expand-sm.navbar-light {
   color: #3F5D45;
 }
 
+a {
+  text-decoration: none;
+}
+
 button.btn-lg {
   border-radius: 0px;
   background-color: #EAF0ED;

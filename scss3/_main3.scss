@@ -127,6 +127,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
     .col-sm-12 {
       background-color: $topic;
       padding: 20px;
+
       h1 {
         font-size: 28px;
         color: #eaf0ed;
@@ -165,6 +166,12 @@ nav.navbar.navbar-expand-sm.navbar-light {
   text-align: center;
   color: #3f5d45;
   padding: 20px;
+  a {
+    text-decoration: none;
+    font-size: 28px;
+    color: $topic;
+    text-align: center;
+  }
 }
 
 .navbar-brand {
