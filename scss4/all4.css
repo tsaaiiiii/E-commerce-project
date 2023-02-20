@@ -107,7 +107,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   font-weight: bold;
   text-align: center;
   font-size: 24px;
-  background-color: #EAF0ED;
+  background-color: #eaf0ed;
 }
 .row.g-0 .col-lg-6.offset-lg-1.col-sm-12 .order {
   display: flex;
@@ -244,7 +244,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   }
 }
 .row.g-0 .col-lg-4.col-sm-12 .check {
-  background-color: #FFE180;
+  background-color: #ffe180;
   cursor: pointer;
   padding: 15px;
 }
@@ -277,9 +277,10 @@ nav.navbar.navbar-expand-sm.navbar-light {
   height: 30px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px #EAF0ED;
+  position: relative;
   background-color: #EAF0ED;
   margin: 0px;
+  border: 0;
   cursor: pointer;
 }
 @media all and (max-width: 767px) {
@@ -292,17 +293,29 @@ nav.navbar.navbar-expand-sm.navbar-light {
   margin-left: 5px;
 }
 .sent_mail .icon_arrow {
-  background-color: #FFE180;
-  border: solid 1px #FFE180;
+  position: absolute;
+  background-color: #ffe180;
+  border: solid 1px #ffe180;
   width: 35px;
-  height: 28px;
+  height: 30px;
+  left: 152px;
 }
 .sent_mail .icon_arrow img {
   margin-left: 5px;
 }
+@media all and (max-width: 1600px) {
+  .sent_mail .icon_arrow {
+    left: 250px;
+  }
+}
+@media all and (max-width: 767px) {
+  .sent_mail .icon_arrow {
+    left: 180px;
+  }
+}
 
 .row.row_footer {
-  background-color: #EAF0ED;
+  background-color: #eaf0ed;
 }
 .row.row_footer .col-lg-6.col-sm-6 img {
   margin-top: 20px;

@@ -123,7 +123,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   padding: 20px;
   color: #EAF0ED;
   background-color: #3F5D45;
-  border: solid 1px #FFFFFF;
+  border: solid 1px #ffffff;
   font-weight: bold;
 }
 .invoice button:hover {
@@ -144,13 +144,13 @@ nav.navbar.navbar-expand-sm.navbar-light {
   background-color: #EAF0ED;
 }
 .information input::-moz-placeholder {
-  color: #8DA291;
+  color: #8da291;
 }
 .information input:-ms-input-placeholder {
-  color: #8DA291;
+  color: #8da291;
 }
 .information input::placeholder {
-  color: #8DA291;
+  color: #8da291;
 }
 
 .member_address {
@@ -162,7 +162,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
 }
 .member_address select {
   background-color: #EAF0ED;
-  color: #8DA291;
+  color: #8da291;
   margin-top: 10px;
 }
 
@@ -181,7 +181,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   margin-top: 30px;
 }
 .title .circle .circle_frame {
-  border: solid 1px #FFFFFF;
+  border: solid 1px #ffffff;
   border-radius: 100%;
   width: 20px;
   height: 20px;
@@ -210,7 +210,7 @@ nav.navbar.navbar-expand-sm.navbar-light {
   cursor: pointer;
 }
 .title .line {
-  border: solid 1px #FFFFFF;
+  border: solid 1px #ffffff;
   width: 80px;
   height: 0px;
   margin-top: 10px;
@@ -229,9 +229,9 @@ nav.navbar.navbar-expand-sm.navbar-light {
 }
 .next_step h2 {
   font-size: 24px;
-  background-color: #FFE180;
+  background-color: #ffe180;
   text-align: center;
-  color: #3F5D45;
+  color: #3f5d45;
   padding: 20px;
 }
 
@@ -299,12 +299,12 @@ nav.navbar.navbar-expand-sm.navbar-light {
   margin-left: 10px;
 }
 .order_list .product_text p {
-  color: #8DA291;
+  color: #8da291;
   font-size: 14px;
   margin-top: 20px;
 }
 .order_list .product_text h3 {
-  color: #8DA291;
+  color: #8da291;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -330,9 +330,10 @@ nav.navbar.navbar-expand-sm.navbar-light {
   height: 30px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px #EAF0ED;
+  position: relative;
   background-color: #EAF0ED;
   margin: 0px;
+  border: 0;
   cursor: pointer;
 }
 @media all and (max-width: 767px) {
@@ -345,17 +346,29 @@ nav.navbar.navbar-expand-sm.navbar-light {
   margin-left: 5px;
 }
 .sent_mail .icon_arrow {
-  background-color: #FFE180;
-  border: solid 1px #FFE180;
+  position: absolute;
+  background-color: #ffe180;
+  border: solid 1px #ffe180;
   width: 35px;
-  height: 28px;
+  height: 30px;
+  left: 152px;
 }
 .sent_mail .icon_arrow img {
   margin-left: 5px;
 }
+@media all and (max-width: 1600px) {
+  .sent_mail .icon_arrow {
+    left: 250px;
+  }
+}
+@media all and (max-width: 767px) {
+  .sent_mail .icon_arrow {
+    left: 180px;
+  }
+}
 
 .row.row_footer {
-  background-color: #EAF0ED;
+  background-color: #eaf0ed;
 }
 .row.row_footer .col-lg-6.col-sm-6 img {
   margin-top: 20px;

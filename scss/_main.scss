@@ -90,7 +90,6 @@ ul.row.g-0.justify-content-center.row_green_bg {
     }
   }
   .green_bg {
-    border: solid 1px black;
     background-color: $topic;
     background-image: url(https://bit.ly/2R5tqwD);
     height: 300px;
@@ -240,9 +239,10 @@ button.btn-lg {
   height: 30px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px $dessert-intro;
+  position: relative;
   background-color: $dessert-intro;
   margin: 0px;
+  border: 0;
   cursor: pointer;
   @include iphone {
     width: 45%;
@@ -252,14 +252,23 @@ button.btn-lg {
     margin-left: 5px;
   }
   .icon_arrow {
+    position: absolute;
     background-color: #ffe180;
     border: solid 1px #ffe180;
-
     width: 35px;
-    height: 28px;
+    height: 30px;
+
+    left: 152px;
 
     img {
       margin-left: 5px;
+    }
+    @include mac {
+      left: 250px;
+    }
+
+    @include iphone {
+      left: 180px;
     }
   }
 }
@@ -277,6 +286,7 @@ button.btn-lg {
       margin-top: 80px;
       line-height: 30px;
       color: $topic;
+
       @include iphone {
         margin-top: 50px;
       }

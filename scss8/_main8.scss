@@ -129,9 +129,10 @@ nav.navbar.navbar-expand-sm.navbar-light {
   height: 30px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px $dessert-intro;
+  position: relative;
   background-color: $dessert-intro;
   margin: 0px;
+  border: 0;
   cursor: pointer;
   @include iphone {
     width: 45%;
@@ -141,14 +142,23 @@ nav.navbar.navbar-expand-sm.navbar-light {
     margin-left: 5px;
   }
   .icon_arrow {
+    position: absolute;
     background-color: #ffe180;
     border: solid 1px #ffe180;
-
     width: 35px;
-    height: 28px;
+    height: 30px;
+
+    left: 152px;
 
     img {
       margin-left: 5px;
+    }
+    @include mac {
+      left: 250px;
+    }
+
+    @include iphone {
+      left: 180px;
     }
   }
 }

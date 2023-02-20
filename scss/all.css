@@ -160,7 +160,6 @@ ul.row.g-0.justify-content-center.row_green_bg .col-lg-2.col-sm-1 a:hover {
   }
 }
 ul.row.g-0.justify-content-center.row_green_bg .green_bg {
-  border: solid 1px black;
   background-color: #3F5D45;
   background-image: url(https://bit.ly/2R5tqwD);
   height: 300px;
@@ -343,9 +342,10 @@ button.btn-lg {
   height: 30px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px #EAF0ED;
+  position: relative;
   background-color: #EAF0ED;
   margin: 0px;
+  border: 0;
   cursor: pointer;
 }
 @media all and (max-width: 767px) {
@@ -358,13 +358,25 @@ button.btn-lg {
   margin-left: 5px;
 }
 .sent_mail .icon_arrow {
+  position: absolute;
   background-color: #ffe180;
   border: solid 1px #ffe180;
   width: 35px;
-  height: 28px;
+  height: 30px;
+  left: 152px;
 }
 .sent_mail .icon_arrow img {
   margin-left: 5px;
+}
+@media all and (max-width: 1600px) {
+  .sent_mail .icon_arrow {
+    left: 250px;
+  }
+}
+@media all and (max-width: 767px) {
+  .sent_mail .icon_arrow {
+    left: 180px;
+  }
 }
 
 .row.row_footer {

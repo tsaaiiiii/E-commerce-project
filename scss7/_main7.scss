@@ -1,351 +1,303 @@
-nav.navbar.navbar-expand-sm.navbar-light{
-    flex-wrap: nowrap;
-    .container-fluid{
-        @include mac{
-            flex-direction: row;
-        }
-        @include iphone{
-            flex-direction: row-reverse;
-        }
+nav.navbar.navbar-expand-sm.navbar-light {
+  flex-wrap: nowrap;
+  .container-fluid {
+    @include mac {
+      flex-direction: row;
     }
-   
+    @include iphone {
+      flex-direction: row-reverse;
+    }
+  }
 }
-.navbar-brand.logo{
-    margin-top: 10px;
-    @include iphone{
-        margin-left: 100px;
-    }
-}
-.navbar-brand.cart{
-    margin-top: 10px;
-    @include mac{
-        display: none;
-    }
-    @include ipad{
-        display: none;
-    }
-    @include iphone{
-        display: block;
-        
-    }
-}
-.nav-item{
-    img{
-        @include iphone{
-            display: none;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-.sign{
-    // border:solid 1px red;
-    background-color: $topic;
-    width: 100%;
-    height: 450px;
-    h1{
-        font-size: 28px;
-        text-align: left;
-        padding: 30px 50px;
-        color: $dessert_intro;
-    }
-}
-.invoice{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    button{
-        width: 200px;
-        height: 60px;
-        padding: 20px;
-        color:$dessert_intro;
-        background-color: $topic;
-        border: solid 1px #FFFFFF;
-        font-weight: bold;
-        &:hover{
-            color:$topic;
-            background-color: $dessert_intro;
-        }
-    }
-}
-.information{
-    margin-bottom: 50px;
+.navbar-brand.logo {
+  margin-top: 10px;
+  @include iphone {
     margin-left: 100px;
-    label{
-       color:$dessert_intro;
-    }
-    input{
-        width: 300px;
-        border-radius: 0px;
-        background-color: $dessert-intro;
-        &::placeholder{
-            color: #8DA291;
-        }
-    }
+  }
 }
-.member_address{
+.navbar-brand.cart {
+  margin-top: 10px;
+  @include mac {
     display: none;
-    margin: 0px 0px 20px 100px;
-    label{
-        color:$dessert-intro;
-        
-    }
-    select{
-        background-color: $dessert_intro;
-        color: #8DA291;
-        margin-top: 10px;
-    }
+  }
+  @include ipad {
+    display: none;
+  }
+  @include iphone {
+    display: block;
+  }
 }
-.member_road{
-    input{
-        background-color: $dessert_intro;
-        width: 70%;
+.nav-item {
+  img {
+    @include iphone {
+      display: none;
     }
-
+  }
 }
 
-
-
-
-.title{
-    display:flex;
-    justify-content: space-between;
-    .circle{
-        display: flex;
-        margin: 20px;
-        margin-top: 30px;
-        .circle_frame{
-            border:solid 1px #FFFFFF;
-            border-radius: 100%;
-            width:  20px;
-            height: 20px;
-            
-        }
-        .circle_frame.circle2{
-            background-color: #fff;
-            border-radius: 100%;
-            width:  20px;
-            height: 20px;
-            a{
-                text-decoration: none;
-            }
-            h5{
-                color:$topic;
-                text-align: center;
-                margin-top: 1px;
-            }
-        }
-        .circle_in{
-            border:solid 6px #FFFF;
-            border-radius: 100%;
-            width:  10px;
-            height: 10px;
-            margin-top: 3px;
-            margin-left: 3px;
-            cursor: pointer;
-            
-        }
-    }
-    .line{
-        border: solid 1px #FFFFFF;
-        width: 80px;
-        height: 0px;
-        margin-top: 10px;
-    }
+.sign {
+  // border:solid 1px red;
+  background-color: $topic;
+  width: 100%;
+  height: 450px;
+  h1 {
+    font-size: 28px;
+    text-align: left;
+    padding: 30px 50px;
+    color: $dessert_intro;
+  }
 }
-
-
-
-
-.next_step{
-    margin-bottom: 50px;
-    a{
-        text-decoration: none;
+.invoice {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  button {
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    color: $dessert_intro;
+    background-color: $topic;
+    border: solid 1px #ffffff;
+    font-weight: bold;
+    &:hover {
+      color: $topic;
+      background-color: $dessert_intro;
     }
-    @include iphone{
-        margin-bottom: 0px;
-    }
-    h2{
-        // border:solid 3px purple;
-       font-size: 24px;
-       background-color: #FFE180;
-       text-align: center;
-       color:#3F5D45;
-       padding: 20px;
-       
-    }
-
+  }
 }
-
-.col-lg-3{
-    @include iphone{
-        display:  none;
-    }
-}
-.order_total{
-    @include order_total;
-    margin-left: 30px;
-    
-    h1{
-        @include order_total-h1;
-    }
-    p{
-       @include order_total-p;
-       margin-top: 10px;
-    }
-    span{
-        margin-left: 150px;
-       
-      
-        
-    }
-    .total p{
-        @include order_total-p2;
-        span{
-            margin-left: 120px;
-            
-        }
-    }
-       
-}
-
-.order_list{
-    @include order_total;
-    margin-left: 30px;
-    margin-top: 20px;
-    h1{
-        @include order_total-h1;
-    }
-    .list{
-        display: flex;
-        margin: 10px;
-    }
-    .product_text{
-        margin-left: 10px;
-        p{
-           color:#8DA291;
-           font-size: 14px;
-           margin-top: 20px;
-        }
-        h3{
-            color:#8DA291;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    }
-}
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navbar-brand{
-    display:flex;
-    margin-left: 150px;
-    img{
-        @include iphone{
-            margin-left: -50px;
-            margin-bottom: 10px;
-        }
-    }
-    p{
-        margin-top: 15px;
-        margin-left: 10px;
-        color: white;
-    }
-}
-.sent_mail{
-    width: 20%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    border:solid 1px $dessert-intro;
+.information {
+  margin-bottom: 50px;
+  margin-left: 100px;
+  label {
+    color: $dessert_intro;
+  }
+  input {
+    width: 300px;
+    border-radius: 0px;
     background-color: $dessert-intro;
-    margin: 0px;
-    cursor: pointer;
-    @include iphone{
-        width: 45%;
-        margin-left: 150px;
+    &::placeholder {
+      color: #8da291;
     }
-    .icon_mail{
-        margin-left: 5px;
-        
-    }
-    .icon_arrow{
-        background-color: #FFE180;
-        border:solid 1px #FFE180;
-        
-        width: 35px;
-        height: 28px;
-        
-        img{
-            margin-left: 5px;
-        }
-    }
-    
+  }
+}
+.member_address {
+  display: none;
+  margin: 0px 0px 20px 100px;
+  label {
+    color: $dessert-intro;
+  }
+  select {
+    background-color: $dessert_intro;
+    color: #8da291;
+    margin-top: 10px;
+  }
+}
+.member_road {
+  input {
+    background-color: $dessert_intro;
+    width: 70%;
+  }
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  .circle {
+    display: flex;
+    margin: 20px;
+    margin-top: 30px;
+    .circle_frame {
+      border: solid 1px #ffffff;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+    }
+    .circle_frame.circle2 {
+      background-color: #fff;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      a {
+        text-decoration: none;
+      }
+      h5 {
+        color: $topic;
+        text-align: center;
+        margin-top: 1px;
+      }
+    }
+    .circle_in {
+      border: solid 6px #ffff;
+      border-radius: 100%;
+      width: 10px;
+      height: 10px;
+      margin-top: 3px;
+      margin-left: 3px;
+      cursor: pointer;
+    }
+  }
+  .line {
+    border: solid 1px #ffffff;
+    width: 80px;
+    height: 0px;
+    margin-top: 10px;
+  }
+}
 
-.row.row_footer{
-   background-color: #EAF0ED;
-    .col-lg-6.col-sm-6{
-        img{
-            margin-top: 20px;
-            @include iphone{
-                margin-top: 10px;
-            }
-            
-        }
-        p{
-            margin-top: 80px;
-            line-height: 30px;
-            color: $topic;
-            @include iphone{
-                margin-top: 50px;
-            }
-        }
-        
-    
+.next_step {
+  margin-bottom: 50px;
+  a {
+    text-decoration: none;
+  }
+  @include iphone {
+    margin-bottom: 0px;
+  }
+  h2 {
+    // border:solid 3px purple;
+    font-size: 24px;
+    background-color: #ffe180;
+    text-align: center;
+    color: #3f5d45;
+    padding: 20px;
+  }
+}
+
+.col-lg-3 {
+  @include iphone {
+    display: none;
+  }
+}
+.order_total {
+  @include order_total;
+  margin-left: 30px;
+
+  h1 {
+    @include order_total-h1;
+  }
+  p {
+    @include order_total-p;
+    margin-top: 10px;
+  }
+  span {
+    margin-left: 150px;
+  }
+  .total p {
+    @include order_total-p2;
+    span {
+      margin-left: 120px;
     }
-    .col-lg-4.col-sm-4{
-       margin-bottom: 30px;
-            @include iphone{
-                margin-top: 10px;
-            }
-        
-        img{
-           padding: 20px;
-           @include iphone{
-            display: none;
-           }
-        }
+  }
+}
+
+.order_list {
+  @include order_total;
+  margin-left: 30px;
+  margin-top: 20px;
+  h1 {
+    @include order_total-h1;
+  }
+  .list {
+    display: flex;
+    margin: 10px;
+  }
+  .product_text {
+    margin-left: 10px;
+    p {
+      color: #8da291;
+      font-size: 14px;
+      margin-top: 20px;
     }
-   
+    h3 {
+      color: #8da291;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+}
+
+.navbar-brand {
+  display: flex;
+  margin-left: 150px;
+  img {
+    @include iphone {
+      margin-left: -50px;
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    margin-top: 15px;
+    margin-left: 10px;
+    color: white;
+  }
+}
+.sent_mail {
+  width: 20%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: $dessert-intro;
+  margin: 0px;
+  border: 0;
+  cursor: pointer;
+  @include iphone {
+    width: 45%;
+    margin-left: 150px;
+  }
+  .icon_mail {
+    margin-left: 5px;
+  }
+  .icon_arrow {
+    position: absolute;
+    background-color: #ffe180;
+    border: solid 1px #ffe180;
+    width: 35px;
+    height: 30px;
+
+    left: 152px;
+
+    img {
+      margin-left: 5px;
+    }
+    @include mac {
+      left: 250px;
+    }
+
+    @include iphone {
+      left: 180px;
+    }
+  }
+}
+
+.row.row_footer {
+  background-color: #eaf0ed;
+  .col-lg-6.col-sm-6 {
+    img {
+      margin-top: 20px;
+      @include iphone {
+        margin-top: 10px;
+      }
+    }
+    p {
+      margin-top: 80px;
+      line-height: 30px;
+      color: $topic;
+      @include iphone {
+        margin-top: 50px;
+      }
+    }
+  }
+  .col-lg-4.col-sm-4 {
+    margin-bottom: 30px;
+    @include iphone {
+      margin-top: 10px;
+    }
+
+    img {
+      padding: 20px;
+      @include iphone {
+        display: none;
+      }
+    }
+  }
 }
